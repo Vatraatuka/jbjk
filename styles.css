@@ -1,0 +1,86 @@
+/* Reset dan pengaturan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #ff6f61, #f8c8d5); /* Gradien lembut */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang transparan */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.heart {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  clip-path: polygon(50% 0%, 100% 30%, 75% 100%, 25% 100%, 0% 30%);
+  margin: 20px auto;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.countdown {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: white;
+}
+
+footer {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Style tombol */
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e85c51;
+}
